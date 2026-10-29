@@ -17,7 +17,7 @@ Status: **draft**. Values marked (assumed) are starting targets to be revised af
 |----|-------------|
 | FR1 | Measure the machine's electrical current without cutting or modifying its wiring. |
 | FR2 | Measure the machine's vibration. |
-| FR3 | Classify the machine state as Idle, Wash, Rinse, Spin, or Fault. |
+| FR3 | Classify the machine state as Idle, Wash, Rinse, Drain, Spin, or Fault. |
 | FR4 | Store timestamped readings and states locally on the device. |
 | FR5 | Keep storing while the network is down, and send the stored data when it returns. |
 | FR6 | Raise an alert when a fault state is detected. |
@@ -58,6 +58,6 @@ Status: **draft**. Values marked (assumed) are starting targets to be revised af
 
 ## 6. Assumptions to validate
 
-- The five machine states are enough to describe a washing machine cycle.
+- The six machine states (Idle, Wash, Rinse, Drain, Spin, Fault) are enough to describe a washing machine cycle.
 - Current and vibration together are enough to separate normal from faulty behaviour.
 - The numeric targets in section 3 are realistic. Adjust them after the first simulation results and after talking to a factory owner.
